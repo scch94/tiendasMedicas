@@ -1,0 +1,11 @@
+import React from 'react'
+
+export const Navbar = () => {
+    return (
+        <nav class="navbar sticky-top navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Sticky top</a>
+            </div>
+        </nav>
+    )
+}
