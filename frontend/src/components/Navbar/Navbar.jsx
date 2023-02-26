@@ -3,31 +3,38 @@ import React from 'react'
 export const Navbar = () => {
     return (
         <>
-        hola
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search"/>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+        <nav class="bg-gray-50  border-gray-200 dark:bg-gray-900">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
+                <a href="https://flowbite.com" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                </a>
+                <div class="flex items-center">
+                    <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">(555) 412-1234</a>
+                    <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+                </div>
             </div>
-            </nav>
+        </nav>
+        <nav class="bg-gray-50 dark:bg-gray-700">
+            <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+                <div class="flex items-center">
+                    <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">Company</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">Team</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">Features</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         </>
     )
 }

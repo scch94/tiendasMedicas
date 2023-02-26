@@ -5,8 +5,8 @@ import './App.css';
 import * as actions from './redux/actions/index'
 import { Home } from './components/Home/Home';
 import { Navbar } from './components/Navbar/Navbar';
-import { Cart } from './components/Cart/Cart';
 import Car from './components/Car/car';
+import { Carts } from './components/Carts/Carts';
 
 function App() {
   let dispatch=useDispatch();
@@ -18,7 +18,7 @@ function App() {
     <>
       <Routes>
         <Route exact path ='/' element={[<Home/>]}/>
-        <Route exact path='/productos' element={[<Navbar/>,<Cart/>,<Car/>]}/>
+        <Route exact path='/productos' element={[<Navbar/>,<Carts/>,<Car/>]}/>
       </Routes>
     </>
   );
