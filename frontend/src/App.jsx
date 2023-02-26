@@ -17,8 +17,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path ='/' element={[<Home/>]}/>
+        <Route exact path ='/' element={[<Navbar/>,<Home/>]}/>
         <Route exact path='/productos' element={[<Navbar/>,<Carts/>,<Car/>]}/>
+        <Route exact path ='/administracion' element={[<Navbar/>]}/>
       </Routes>
     </>
   );
