@@ -1,16 +1,17 @@
 import React from 'react'
 import s from "./Cart.module.css"
-export const Cart = () => {
+export const Cart = ({nombre,img}) => {
+    console.log("hola",nombre)
   return (
     <div className={s.separando}>
         <div class="flex font-sans">
-            <div class="flex-none w-48 relative">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_879435-MCO53553653984_012023-W.jpg" loading="lazy" />
+            <div class="flex-none w-48 relative" >
+                <img src={img} loading="lazy" />
             </div>
             <form class="p-1">
                 <div class="flex flex-wrap">
                 <h1 class="flex-auto text-lg font-semibold text-slate-900">
-                    uniforme médico mujer azul cherokee
+                    {nombre}
                 </h1>
                 
                 <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
